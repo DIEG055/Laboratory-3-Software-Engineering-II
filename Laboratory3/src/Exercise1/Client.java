@@ -2,23 +2,19 @@ package Exercise1;
 
 import Exercise1.Vehicles.*;
 
-/**
- *
- * @author Juan Diego Medina Naranjo
- */
 public class Client {
 
 //  Strategy Object, it defines the vehicle
-    private Transport transport;
-    
+    private TransportContext transport;
     private float budget;
     private float time;
 
     public Client() {
-        this.transport = new Transport();
+        this.transport = new TransportContext();
     }
 
-//    Algorithm to define the type of vehicle according to the constraints
+    /*    Algorithm use to choose an specific Strategy(Vehicle)
+      according to the constraints*/
     public void orderVehicle(float budget, float time) {
         this.time = time;
         this.budget = budget;
@@ -32,7 +28,7 @@ public class Client {
     }
 
     public void goToAirport() {
-        this.transport.goToDestination(budget, time);
+        this.transport.goToDestination();
     }
 
 }

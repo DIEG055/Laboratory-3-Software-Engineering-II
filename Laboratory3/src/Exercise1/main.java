@@ -1,12 +1,7 @@
-
 package Exercise1;
 
 import java.util.Scanner;
 
-/**
- *
- * @author Juan Diego Medina Naranjo
- */
 public class main {
 
     public static void main(String[] args) {
@@ -15,8 +10,6 @@ public class main {
 //           Cab = Budget >= 15000 and time <= 30
 //           Bus = Budget >= 5000 and time <= 60
 //           Bicycle = Budge <5000 or time >60
-
-//      The logic to define the vehicle is located in Client Class.        
 
         Client client1 = new Client();
         client1.orderVehicle(50000, 15);
