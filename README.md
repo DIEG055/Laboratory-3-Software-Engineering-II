@@ -15,7 +15,9 @@ Finalmente se tiene la clase **Client** que es usa el método orderVehicle() par
 
 ## **Exercise 2**
 
-Para resolver este ejercicio, lo que se hizo fue descargar el código del repositorio indicado en las instrucciones del laboratorio. Posteriormente, siguiendo la estructura del dicho código, se creo una nueva franquicia de pizzas **MedellinPizzaStore** (En el package **PizzaStore.Stores**), y las pizzas pertenecientes a dicha franquicia (En el packeage **PizzaStore.PizzaStyle.Medellin**): **MedellinStyleBandejaPaisaPizza**, **MedellinStyleChorizoPizza** ,**MedellinStyleGroundBeefPizza**,**MedellinStylePorkRindPizza**. Cada una con caracteristicas especiales que las diferencian de las demás.
+Para resolver este ejercicio, lo que se hizo fue descargar el código del repositorio indicado en las instrucciones del laboratorio. Posteriormente, siguiendo la estructura del dicho código, se creo una nueva franquicia de pizzas **MedellinPizzaStore** (En el package **PizzaStore.Stores**), y las pizzas pertenecientes a dicha franquicia (En el packeage **PizzaStore.PizzaStyle.Medellin**): **MedellinStyleBandejaPaisaPizza**, **MedellinStyleChorizoPizza**, **MedellinStyleGroundBeefPizza**, **MedellinStylePorkRindPizza**. Cada una con caracteristicas especiales que las diferencian de las demás.
+
+Por último, se modificó la clase **main** para que se mostraran no solo las pizzas de Nueva York o Chicago, sino también las pizzas de Medellín.
 
 
 ## **Exercise 3**
@@ -45,4 +47,4 @@ Una de las principales practicas que genera el código espagueti es la concatena
 
 ## **Exercise 5**
 
-
+Se modificó el código del ejemplo mostrado en clase para la explicación del patrón decorador (Decorator pattern). Añadiéndole nuevas adiciones: **Figure**, **Timed**; y un nuevo tipo de cafe: **Coffee**. Con estas adiciones, y las ya existentes, hicimos una función en el main que nos permite, según el tipo de cafe y las adiciones que tiene este, imprimir el nivel de sofisticación apropiado para el café indicado.
