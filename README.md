@@ -5,6 +5,19 @@
 * Camilo Andres Gil Ballen
 * Juan Diego Medina Naranjo
 
+## **Exercise 1**
+
+Inicialmente se crea la Interfaz **VehicleStrategy**, la cual encapsula el comportamiento de ir al aeropuerto dado por el método goToAirport(). Esta interfaz es implementada por las clases **Bicycle,Bus y Cab**, allí se sobrescribe el método goToAirport() según sea el caso.
+
+Luego, se tiene la clase **TransportContext**. Dentro de esta clase se encuentra una instancia de VehicleStrategy, la cual es inicializada con el método setVehicle(VehicleStrategy v). Esto permite que posteriormente en la clase Client al tener una instancia de TransportContext se puede usar este método enviando como parámetro alguno de los vehículos disponibles(Bicycle,Bus,Cab). La clase TransportContext no tiene en cuenta estrategias específicas(vehículos) lo cual permite ser usada sin importar los vehículos disponibles en el caso de que se agreguen o eliminen vehículos.
+
+Finalmente se tiene la clase **Client** que es usa el método orderVehicle() para definir el vehículo a usar de acuerdo a las condiciones de tiempo y presupuesto que son definidas. Luego, como se mencionó anteriormente se tiene una instancia de TransportClient, que a través del método setVehicle() define el vehículo. Posteriormente se tiene el método goToDestination() que llama a la función goToAirport() de la interfaz VehicleStrategy, este método ya fue sobrescrito por cada tipo de vehiculo y responderá de acorde al vehículo que se haya elegido.
+
+## **Exercise 2**
+
+Para resolver este ejercicio, lo que se hizo fue descargar el código del repositorio indicado en las instrucciones del laboratorio. Posteriormente, siguiendo la estructura del dicho código, se creo una nueva franquicia de pizzas **MedellinPizzaStore** (En el package **PizzaStore.Stores**), y las pizzas pertenecientes a dicha franquicia (En el packeage **PizzaStore.PizzaStyle.Medellin**): **MedellinStyleBandejaPaisaPizza**, **MedellinStyleChorizoPizza** ,**MedellinStyleGroundBeefPizza**,**MedellinStylePorkRindPizza**. Cada una con caracteristicas especiales que las diferencian de las demás.
+
+
 ## **Exercise 3**
 El ejemplo que se usó para la implementación del patrón Builder Pattern, consiste en una fabrica de carros la cual es capaz de ensamblar y construir carros de diferentes marcas, el problema de esto es que cada marca de autos tiene diferentes especificaciones de sus partes. 
 
@@ -29,3 +42,7 @@ En este punto se puede evidenciar el problema del antipattern Cut and Paste Prog
 **Spaguetti Code:**
 
 Una de las principales practicas que genera el código espagueti es la concatenación de if, para ejemplificar esto, se implemento una funcionalidad que permite determinar si un estudiante dado puede ingresar a un evento o no, dependiendo de algunos parámetros, este código es una clásica validación, pero la concatenación un if tras otro, (incluso un for, para este caso) hace que se genere código espagueti, haciéndolo ilegible. 
+
+## **Exercise 5**
+
+
